@@ -111,6 +111,12 @@ public class WeiXinAlert {
 			String secret=(String)properties.get("Secret");
 			//应用id
 			String agentId=(String)properties.get("AgentId");
+			
+			if (StringUtils.isAnyBlank(corpId,secret,agentId)) {
+				logger.error("缺少企业号id,secret，应用id等必要参数,程序退出！");
+				System.exit(-1);
+			}
+			
 			//推送标签无用户时缺省推送的部门id
 			partyId=(String)properties.get("PartyId");
 			//推送标签无用户时缺省推送的用户id
