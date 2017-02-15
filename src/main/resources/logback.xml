@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration scan="true">
+	
+	
+	<appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>%d{HH:mm:ss.SSS} %-5level %logger{36} - %msg%n</pattern>
+			<charset>utf8</charset>
+		</encoder>
+	</appender>
+	
+    <logger name="com.anjia" level="INFO"/>
+    <logger name="me.chanjar.weixin" level="ERROR"/>
+	
+    <root level="DEBUG">
+        <appender-ref ref="CONSOLE"/>
+    </root>
+
+</configuration>
