@@ -67,3 +67,7 @@ $ java -jar ./target/wechat-qiye-alert.jar /path/to/cp.properties tagName msg IN
 如果指定标签名称不存在，会自动通过api创建一个标签（处于锁定状态），需要管理员，手动解锁，并且添加成员
 如果指定标签下没有成员(标签添加部门无效)，则会根据`cp.properties`指定的部门id`PartyId`和人员id`UserId`进行发送
 如果部门下没有成员，而且指定的用户也没有关注该企业号，则会**将信息推送给该企业号全部已关注成员，测试时需谨记**
+
+
+## shell或者python版
+参见 http://www.oschina.net/news/75588/zabbix-3.0.3
