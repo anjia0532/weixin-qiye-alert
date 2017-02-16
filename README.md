@@ -63,6 +63,35 @@ $ java -jar ./target/wechat-qiye-alert.jar /path/to/cp.properties tagName msg IN
 
 参见 https://github.com/anjia0532/weixin-qiye-alert/blob/master/src/main/java/com/anjia/WeiXinAlert.java#L50
 
+## Shell
+
+部分情况下使用java -jar会有问题(e.g. ElastAlert Command 方式调用),所以加了一个shell壳
+[weixin-qiye-alert.sh](https://github.com/anjia0532/weixin-qiye-alert/blob/master/src/main/resources/weixin-qiye-alert.sh)
+
+```bash
+$ ~/weixin-qiye-alert.sh -h
+
+##########################################################
+# 微信企业号推送消息                                     #
+#                                                        #
+# 脚本作者: AnJia <anjia0532@gmail.com>                  #
+# 作者博客: https://anjia.ml/                            #
+# Github: https://github.com/anjia0532/weixin-qiye-alert #
+#                                                        #
+##########################################################
+
+请使用: ./weixin-qiye-alert.sh [options] <args...>
+
+    options 可选参数为
+        -h, --help      查看脚本说明
+        -l, level       输出[ALL/TRACE/DEBUG/INFO/WARN/ERROR/OFF]级别的日志
+
+    args 必填参数为
+        -j, --jar       可执行jar路径
+        -c, --conf      配置文件路径
+        -t, --tag       标签名称
+        -m, --msg       推送信息
+```
 ## 注意
 如果指定标签名称不存在，会自动通过api创建一个标签（处于锁定状态），需要管理员，手动解锁，并且添加成员
 如果指定标签下没有成员(标签添加部门无效)，则会根据`cp.properties`指定的部门id`PartyId`和人员id`UserId`进行发送
