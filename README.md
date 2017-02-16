@@ -106,3 +106,7 @@ $ ~/weixin-qiye-alert.sh -h
 
 ## shell或者python版
 参见 http://www.oschina.net/news/75588/zabbix-3.0.3
+
+## ElastAlert 微信推送插件
+
+参见我另外一个项目 [anjia0532/elastalert-wechat-plugin](https://github.com/anjia0532/elastalert-wechat-plugin)
