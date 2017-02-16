@@ -69,18 +69,24 @@ $ java -jar ./target/wechat-qiye-alert.jar /path/to/cp.properties tagName msg IN
 [weixin-qiye-alert.sh](https://github.com/anjia0532/weixin-qiye-alert/blob/master/src/main/resources/weixin-qiye-alert.sh)
 
 ```bash
+$ cd ~/
+
+$ wget https://raw.githubusercontent.com/anjia0532/weixin-qiye-alert/master/src/main/resources/weixin-qiye-alert.sh
+
+$ chmod +x ~/weixin-qiye-alert.sh
+
 $ ~/weixin-qiye-alert.sh -h
 
 ##########################################################
-# 微信企业号推送消息                                     #
+# 微信企业号推送消息                                       #
 #                                                        #
-# 脚本作者: AnJia <anjia0532@gmail.com>                  #
-# 作者博客: https://anjia.ml/                            #
+# 脚本作者: AnJia <anjia0532@gmail.com>                   #
+# 作者博客: https://anjia.ml/                             #
 # Github: https://github.com/anjia0532/weixin-qiye-alert #
 #                                                        #
 ##########################################################
 
-请使用: ./weixin-qiye-alert.sh [options] <args...>
+请使用: ~/weixin-qiye-alert.sh [options] <args...>
 
     options 可选参数为
         -h, --help      查看脚本说明
