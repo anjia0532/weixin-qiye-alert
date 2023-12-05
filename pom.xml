@@ -9,7 +9,7 @@
 	<properties>
 		<weixin.version>2.5.0</weixin.version>
 		<slf4j-logback.version>1.7.10</slf4j-logback.version>
-		<logback.version>1.2.0</logback.version>
+		<logback.version>1.2.13</logback.version>
 
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
